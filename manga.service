@@ -1,0 +1,11 @@
+[Unit]
+Description=Manga Bot
+
+[Service]
+ExecStart=/usr/bin/node /home/leaf/manga-bot/main.js
+Restart=always
+User=leaf
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=default.target
